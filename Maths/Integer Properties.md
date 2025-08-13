@@ -5,6 +5,7 @@
 - If a number $x$ divides two different numbers, $y$ and $z$, then $x$ divides any linear combination of $y$ and $z$. 
 	- A **linear combination** of two numbers is the sum of multiples of those numbers. For example $3x-7y$ and $-2x+4y$ are both linear combinations of $x$ and $y$.
 	- let $x$, $y$, and $z$ be integers. if $x\mid{y}$ and $x\mid{z}$, then $x\mid{(sy+tz)}$ for any integers $s$ and $t$
+
 ## Quotients and Remainders
 - If $x$ does not divide $y$, then dividing $x$ is into $y$ results in a nonzero remainder. The division algorithm states that the result of the division (the **quotient**) and the **remainder** are unique.
 - Let $n$ be an integer and let $d$ be a positive integer. Then, there are unique integers $q$ and $r$, with $0\le{r}\le{d-1}$, such that $n=qd+r$
@@ -14,6 +15,7 @@
 - Most languages include the $\text{div}$ and $\text{mod}$ operations. Where $n$ is positive the result of $n\,\text{mod}\,d$ is straight forward, however if $n$ is negative, different languages may return different values
 	- A language may return $-3$ for $-7\,\text{mod}\,4$. However the definition of the $\text{mod}$ operation according to the division algorithm requires that the result of $-7\,\text{mod}\,4$ be an integer in the range of $0$ through $3$
 	- Since $-7=-2\cdot4+1$, the division algorithm says that $-7\,\text{div}\,4=-2$ and $-7\,\text{mod}\,4=1$
+
 ## Division Procedural Definition
 $$
 \begin{align*}
@@ -37,6 +39,7 @@ $$
 	&\text{End-While}\\\\
 \end{align*}
 $$
+
 ## Modular Arithmetic
 - Given the set $\set{0,1,2,3,4}$, addition and multiplication are defined on the elements in this set in the usual way, except hat the $\text{mod}\,5$ function is applied afterwards to ensure that the result is again from $\set{0,1,2,3,4}$
 - The operation defined by adding two numbers and applying $\text{mod}\,m$ to the result is called $\text{addition}\,\text{mod}\,m$. Similarly the operation defined by multiplying two numbers and applying $\text{mod}\,m$ to the result is called $\text{multiplication}\,\text{mod}\,m$

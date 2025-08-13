@@ -1,7 +1,7 @@
 {
   "cssTheme": "Minimal",
-  "textFontFamily": "Arial Unicode MS",
-  "interfaceFontFamily": "Arial Unicode MS",
+  "textFontFamily": "",
+  "interfaceFontFamily": "",
   "showRibbon": false,
   "showViewHeader": false,
   "theme": "obsidian"

@@ -1,4 +1,6 @@
 [
   "obsidian-latex-suite",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-tikzjax",
+  "obsidian-style-settings"
 ]
