@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "f84d902b98e93803",
+        "id": "134bdde7da83550f",
         "type": "tabs",
         "children": [
           {
-            "id": "009363922ec5fcf2",
+            "id": "7bfeb76af18298a9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/propositions.md",
+                "file": "Maths/predicates.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "propositions"
+              "title": "predicates"
             }
           }
         ]
@@ -123,13 +123,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "009363922ec5fcf2",
+  "active": "7bfeb76af18298a9",
   "lastOpenFiles": [
     "Maths/sets.md",
+    "Maths/predicates.md",
     "Maths/propositions.md",
+    "Maths/arguments.md",
+    "Maths/Integer Properties.md",
     "Maths/functions.md",
     "Maths/counting.md",
     "Maths/binary relations.md",
-    "Maths/Integer Properties.md"
+    "Maths/boolean expressions.md"
   ]
 }

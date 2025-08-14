@@ -39,19 +39,13 @@
   - This is denoted with the symbol $\equiv$ where $s \equiv r$ indicates propositions $s$ and $r$ are logically equivalent
   - Propositions $s$ and $r$ are logically equivalent if and only if $s \leftrightarrow r$ is a tautology
 
-## De Morgans Law
-- A pair of rules that relate conjunctions and disjunctions through negation
-- The negation of a conjunction is equivalent to the disjunction of the negations and vice versa
-- $\neg{(p \lor q)} \equiv (\neg{p}\land \neg{q})$
-- $\neg{(r \land s)} \equiv (\neg{r}\lor \neg{s})$
-
-## Law of Conditional identities
-- Conditional operations can be transformed into a disjunction with a negated hypothesis
-	- $p \rightarrow q \equiv \neg{p} \lor q$
-- Biconditional operations can be transformed into a disjunction between the conditional operation of both elements
-	- $p \leftrightarrow q \equiv (p \rightarrow q) \lor (q \rightarrow p)$
-
 ## Laws of propositional logic
+- **De Morgans Law**
+    - $\neg{(p \lor q)} \equiv (\neg{p}\land \neg{q})$
+    - $\neg{(r \land s)} \equiv (\neg{r}\lor \neg{s})$
+- **Conditional Identities**
+    - $p \rightarrow q \equiv \neg{p} \lor q$
+	- $p \leftrightarrow q \equiv (p \rightarrow q) \lor (q \rightarrow p)$
 - **Associative**
 	- $(p \lor q)\lor r \equiv p \lor (q \lor r)$
 	- $(p \land q)\land r \equiv p \land (q \land r)$
@@ -64,46 +58,3 @@
 - **Absorption**
 	- $p \lor (p \land q) \equiv p$
 	- $p \land (p \lor q) \equiv p$
-
-## Argument
-- An argument is a sequence of propositions, called **hypotheses**, followed by a final proposition, called the **conclusion**.
-- An argument is valid if the conclusion is true when all propositions / hypotheses that make up the argument are also true or $(h_{1}\land h_{2}\land...\land h_{n})\rightarrow c$
-- Arguments are denoted in the following format where each $h$ is a hypothesis and $c$ is the conclusion:
-	- $$
-\begin{align*}
-&h_{1}\\
-&h_{2}\\
-&...\\
-&\underline{h_{n}}\\
-&\therefore c
-\end{align*}
-$$
-- Reordering the hypotheses of an argument does not change whether it is valid or not. Two arguments with hypotheses in different orders are considered to be the same argument
-
-## Rules of Inference
-- The rules of inference are a set of **known valid arguments** used to simplify the process of proving an arguments validity
-- $\newcommand{\Conclusion}[1]{ \hline\therefore\,#1 }$ $\newcommand{\Argument}[2]{ \begin{array}{l}#1\end{array}&&\text{#2} }$ $$
-\begin{array}{l,l}
-\Argument{p\\ p\to{q}\\ \Conclusion{q}}{Modus ponens}\\\\
-\Argument{\neg{q}\\ p\to{q}\\ \Conclusion{\neg{p}}}{Modus tollens}\\\\
-\Argument{p\\ \Conclusion{p\lor q}}{Addition}\\\\
-\Argument{p\land q\\ \Conclusion{p}}{Simplification}\\\\
-\Argument{p\\ q\\ \Conclusion{p\land q}}{Conjunction}\\\\
-\Argument{p\to{q}\\ q\to{r}\\ \Conclusion{p\to{r}}}{Hypothetical syllogism}\\\\
-\Argument{p\lor q\\ \neg{p}\\ \Conclusion{q}}{Disjunctive syllogism}\\\\
-\Argument{p\lor q\\ \neg{p}\lor{r}\\\Conclusion{q\lor r}}{Resolution}\\\\
-\end{array}
-$$
-# Disjunctive / Conjunctive Normal Form (DNF / CNF)
-- A disjunctive normal form expression or DNF expression is the sum of one or many terms with no addition within each term.
-- A conjunctive normal form expression or CNF expression is the product of one or many clauses with no multiplication within each clause
-- The complement of a variable is denoted with a bar over said term, for example the complement of $\large x$ is represented as $\large\bar{x}$.
-- Complements can only be applied to single variables in both DNF and CNF expressions.
-- $$
-\begin{align}
-&\mathrm{Disjunctive\ Normal\ Form\ (DNF)}
-&&\large{\bar{x}y\bar{z}+xy+\bar{w}+y \bar{z} w}\\ \\
-&\mathrm{Conjunctive\ Normal\ Form\ (CNF)}
-&&\large{(\bar{x}+y+\bar{z})(x+y)(w)(y+\bar{z}+w)}
-\end{align}
-$$
