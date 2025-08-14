@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1536df4d1b06fbd5",
@@ -127,8 +128,8 @@
     "Maths/sets.md",
     "Maths/propositions.md",
     "Maths/functions.md",
-    "Maths/binary relations.md",
     "Maths/counting.md",
+    "Maths/binary relations.md",
     "Maths/Integer Properties.md"
   ]
 }
