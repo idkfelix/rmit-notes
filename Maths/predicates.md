@@ -11,4 +11,18 @@
 - If the domain of a variable in a predicate is not clear from the context, the domain should be given as a part of the definition of the predicate
 - A statement $\large{P(x)}$ may be true for all values in the domain, however if the statement contains a variable it is still considered to be a predicate not a proposition.
 
-## Universal Quantifier
+## Universal Quantifier ($\large \forall$)
+- The universally quantified statement $\large \forall xP(x)$, using the universal quantifier $\large \forall$, is read as "for all $\large x,P(x)$" or "for every $\large x,P(x)$". This logical statement asserts that $\large P(x)$ is true for every possible value of $\large x$ in its domain.
+- A universally quantified statement $\large \forall xP(x)$ turns the predicate $\large P(x)$ into a proposition as it is now either true or false.
+    - The statement is true if and only if $\large P(n)$ is true for every $\large n$ in the domain of variable $\large x$. This can be proven by showing the predicate holds for an arbitrary element in the domain of variable $\large x$, 
+        - "arbitrary" indicating that nothing is assumed about the element except for its inclusion in the domain
+    - A single counterexample of an element in the domain of variable $\large x$ where $\large P(x)$ is false is enough to prove the universally quantified statement $\large \forall xP(x)$ to be false.
+- If the domain for variable $\large x$ is empty, then the statement $\large \forall xP(x)$ is true because there are no elements in the domain for which $\large P(x)$ is false.
+
+## Existential Quantifier ($\large \exists$)
+- The existentially quantified statement $\large \exists xP(x)$, using the existential quantifier $\large \exists$, is read as "there exists an $\large x$ such that $\large P(x)$". This logical statement asserts that $\large P(x)$ is true for at least one possible value for $\large x$ in its domain.
+- A existentially quantified statement $\large \exists xP(x)$ turns the predicate $\large P(x)$ into a proposition as it now either true or false.
+    - The statement is true if there is an element in the domain of variable $\large x$ for which $\large P(x)$ is true.
+    - In order to prove the existentially quantified statement false one must show that for every element in the domain of variable $\large x$ $\large P(x)$ is false.
+        - Some statements can be shown to be false for an arbitrary element in the domain of variable $\large x$. For example $\large \exists x(x+1\lt x)$ can be shown false because no positive integer satisfies the expression $\large x+1\lt x$ .
+- If the domain for variable $\large x$ is empty, then the statement $\large \exists xP(x)$ is false because there is no element in the domain for which $\large P(x)$ is true.
