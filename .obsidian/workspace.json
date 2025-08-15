@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1536df4d1b06fbd5",
@@ -125,9 +124,9 @@
   },
   "active": "7bfeb76af18298a9",
   "lastOpenFiles": [
+    "Maths/propositions.md",
     "Maths/predicates.md",
     "Maths/sets.md",
-    "Maths/propositions.md",
     "Maths/arguments.md",
     "Maths/Integer Properties.md",
     "Maths/functions.md",
