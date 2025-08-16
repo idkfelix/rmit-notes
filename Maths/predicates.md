@@ -49,5 +49,8 @@ $$
     - For the proposition $\large \forall{x\exists{yP(x,y)}}$ to be true there must a $\large y$ for every possible value of $\large x$ such that the predicate is true.
     - For the proposition $\large \exists{x\forall{yP(x,y)}}$ to be true there must be an $\large x$ for which every possible value of $\large y$ will make the predicate true.
 
-## Expressing Uniqueness
-- 
+## Expressing Uniqueness & Exclusion
+- An existentially quantified statement will evaluate to true even if there is more than one element in the domain that causes the predicate to evaluate to true. To show that the predicate is true for only one element in the domain a combination of quantifiers can be used.
+    - $\large \exists{x(P(x)\land\forall{y((x\neq y)\to\neg{P(y)})})}$
+- A universally quantified statement $\large \forall{x\forall{yP(x,y)}}$, which shows a relationship between $\large x$ and $\large y$, may be proven false by an example where $\large x=y$ in a scenario where an element cannot have a relationship with itself. To show the proposition is true when this condition is not met an exclusion can be made to the scenario of $\large x=y$.
+    - $\large \forall{x\forall{y((x\neq y)\to P(x,y))}}$
